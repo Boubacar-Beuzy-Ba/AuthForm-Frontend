@@ -1,8 +1,10 @@
 import googleLogo from "../assets/icons/google-logo.png";
+import facebookLogo from "../assets/icons/facebook-logo.png";
 export const FormInput = () => {
   return (
-    <div className="w-8/12 mx-auto">
-      <h1 className="text-3xl my-6">Create Account</h1>
+    <div className="w-full mx-4 sm:w-8/12 sm:mx-auto">
+      <h1 className="text-3xl my-6 hidden sm:block">Create Account</h1>
+      <h1 className="text-3xl my-6 block sm:hidden">Sign up</h1>
       <form className="w-full">
         <div className="flex flex-col gap-6 text-sm">
           <input
@@ -32,9 +34,13 @@ export const FormInput = () => {
           <button className="btn uppercase bg-green-400 w-full rounded-md p-3 text-sm text-white shadow-sm shadow-green-950">
             Sign up
           </button>
-          <button className="mt-10 bg-white w-full rounded-md p-3 shadow-2xl text-gray-400 shadow-white border text-sm flex justify-center gap-2 items-center">
+          <button className="mt-5 bg-white w-full rounded-md p-3 shadow-2xl text-gray-400 shadow-white border text-sm flex justify-center gap-2 items-center">
             <img src={googleLogo} alt="Google" className="w-6" />
             Sign up with Google
+          </button>
+          <button className="mt-2 bg-white w-full rounded-md p-3 shadow-2xl text-gray-400 shadow-white border text-sm flex justify-center gap-2 items-center">
+            <img src={facebookLogo} alt="facebook" className="w-6" />
+            Sign up with Facebook
           </button>
         </div>
         <div className="mx-auto text-center">
